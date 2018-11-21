@@ -1,0 +1,17 @@
+//Queries SASS partial
+//Michelle Chapeski
+//November 21, 2018
+
+@mixin smallToMedium($minSize, $maxSize) {
+    
+    @media all and (min-width:$minSize) and (max-width:$maxSize){
+        @content;
+    }
+}
+
+@mixin large($minSize) {
+    
+    @media all and (min-width:$minSize){
+        @content;
+    }
+}

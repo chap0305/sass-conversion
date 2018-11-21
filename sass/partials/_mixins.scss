@@ -1,0 +1,9 @@
+//Mixins SASS partial
+//Michelle Chapeski
+//November 21, 2018
+
+@mixin colWidthCalculator($width, $margin, $colNum) {
+    
+    width: ($width - ($margin * ($colNum - 1))) / $colNum;
+    margin-left: $margin;
+}
